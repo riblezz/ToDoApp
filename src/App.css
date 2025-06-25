@@ -10,174 +10,47 @@ body {
   background-image: url("./assets/dark-wood1.png");
 }
 
-.card-to-do {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
 
-.to-do {
+
+ul {
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
-  width: 25vw;
-  height: 85vh;
-  background: linear-gradient(rgb(234, 229, 238), rgb(212, 208, 233));
-  box-shadow: 10px 10px 10px rgba(17, 18, 32, 1);
-  min-width: 380px;
-  position: relative;
-}
-
-.zakoryuchki {
-  position: absolute;
-  display: flex;
-  transform: translateX(-190px);
-  width: 2vw;
-  height: 64vh;
-  z-index: 1;
-  min-width: 25px;
-}
-
-.header {
-  width: 25vw;
-  height: 30vh;
-  border-radius: 8px 8px 0 0;
-  background-image: url("./assets/dotnoise-light-grey.png");
-  /* background: linear-gradient(to top, rgba(61, 65, 135, 1), rgb(43, 139, 97)); */
-  background-color: rgb(82, 49, 96);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items:center;
-  min-width: 380px; 
-}
-
-input {
-  width: 17vw;
-  height: 5vh;
-  border-radius: 5px 0 0 5px;
-  padding: 0 12px;
-  color: rgba(57, 59, 90, 1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  min-width: 260px;
-}
-
-svg {
-  width: 24px;
-}
-
-h1 {
-  position: relative;
-  font-size: 40px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: rgba(255, 255, 255, 1);
-  top: 30px;
-}
-
-.divIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-  border-radius: 0 5px 5px 0;
-  width: 35px;
-  cursor: pointer;
-}
-
-.input {
-  display: flex;
-  position: relative;
-  top: 15px;
-  flex-direction: row;
-  border: none;
-  outline: none;
-
-}
-
-input::placeholder {
-  color: rgba(151, 147, 183, 1);
-}
-
-input:focus {
-  outline: none;
-}
-
-.list {
-  box-sizing: border-box;
-  padding: 20px 40px;
-  display: flex;
-  border-radius: 0 0 35px 35px;
-  gap: 10px;
-  flex-direction: column;
-  height: 70%;
-  align-items: center;
-  overflow: hidden;
-  overflow-y: scroll;
-  scrollbar-width: thin;
-  padding-right: 25px
-}
-
-.card {
-  box-sizing: border-box;
-  position: relative;
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 13px;
-  padding: 5px 10px;
-  height: auto;
-  min-height: 5vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  min-width: 320px;
-  transition: 200ms;
-  border: 2px solid rgb(255, 255, 255);
-}
-
-.card:hover {
-  background-color: rgb(243, 222, 245);
-  border: 2px solid rgb(235, 225, 238);
-  filter: drop-shadow(0 0 10px rgb(63, 26, 100));
-}
-
-.card:hover > li {
-  color: rgb(81, 58, 84);
+  gap: 5px;
 }
 
 .corner {
   border: 1.6px solid rgba(120, 118, 188, 1);
   min-width: 6px;
   min-height: 6px;
+  max-width: 6px;
+  max-height: 6px;
   border-radius: 50%;
   display: flex;
   position: absolute;
 }
 
+
+li {
+  list-style-type: none;
+  color: rgba(57, 59, 90, 1);
+}
+
+p {
+  word-wrap: break-word;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  word-wrap: break-word;
+  transition: 200ms;
+  max-width: 265px;
+}
+
 .trash {
   cursor: pointer;
   margin-left: 6.5px;
-}
-
-img {
-  width: 25px;
-}
-
-li {
-  box-sizing: border-box;
-  list-style-type: none;
-  color: rgba(57, 59, 90, 1);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.1rem;
-  min-width: 260px;
-  max-width: 260px;
-  word-wrap: break-word;
-  margin-left: 15px;
-  transition: 200ms;
+  display: flex;
+  left: 290px;
+  position: absolute;
+  max-width: 100px;
+  max-height: 30px;
 }
 

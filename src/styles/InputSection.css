@@ -1,0 +1,68 @@
+.header {
+  width: 25vw;
+  height: 30vh;
+  border-radius: 8px 8px 0 0;
+  background-image: url("./assets/dotnoise-light-grey.png");
+  /* background: linear-gradient(to top, rgba(61, 65, 135, 1), rgb(43, 139, 97)); */
+  background-color: rgb(82, 49, 96);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+  min-width: 380px;
+}
+
+h1 {
+  position: relative;
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgba(255, 255, 255, 1);
+  top: 30px;
+}
+
+.input {
+  display: flex;
+  position: relative;
+  top: 15px;
+  flex-direction: row;
+  border: none;
+  outline: none;
+}
+
+input {
+  width: 17vw;
+  height: 5vh;
+  border-radius: 5px 0 0 5px;
+  padding: 0 12px;
+  color: rgba(57, 59, 90, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  min-width: 260px;
+}
+
+input::placeholder {
+  color: rgba(151, 147, 183, 1);
+}
+
+input:focus {
+  outline: none;
+}
+
+
+img {
+  width: 25px;
+}
+
+.divIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 5px 5px 0;
+  width: 35px;
+  cursor: pointer;
+}
